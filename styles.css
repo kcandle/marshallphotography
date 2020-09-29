@@ -1,0 +1,291 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(MS_Images/mshero-option3.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+.logo-image {
+  max-height: 80px;
+  padding: 15px 24px;
+}
+
+nav {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  line-height: 60px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      overflow: hidden;
+      color: #000;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;      
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      text-align: right;
+      box-sizing: border-box;
+      /*Add background-color to mini nav here*/
+      padding: 18px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+.bars-image{ 
+  max-height: 35px;
+}
+
+nav.black ul {
+  background: #fff;
+}
+
+
+a:hover {
+  color: black;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            /*Add Background to nav dropdown here*/
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+/*about Section*/
+
+#about {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+}
+
+.my-photo {
+  max-height: 40rem;
+}
+
+.about-me-box {
+  padding: 4% 8%;
+}
+
+/*Portfolio*/
+
+#portfolio {
+  padding: 5% 4%;
+}
+
+.portfolio-header {
+  text-align: center;
+}
+
+.portfolio-sub-header {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.gallery {
+  border: 2px;
+  border-color: black;
+  z-index: -1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*Zoom Effects*/
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img{
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img{
+  transform: scale(1.5);
+}
+
+/*Photo Info Section*/
+
+#photo-info {
+  padding: 7% 12%;
+  background-color: #fff;
+  position: relative;
+}
+
+.photo-title {
+  padding-top: 10%;
+}
+
+.this-photo {
+  max-height: 40rem;
+  max-width: 800px;
+}
+
+.photo-info-box {
+  padding: 0% 8%;
+}
+
+
+/*Contact Section*/
+
+#contact {
+
+}
+
+.contact-title {
+  background: url(MS_Images/mscontact3.jpg) no-repeat;
+  height: 550px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 3%;
+}
+
+.contact-header {
+  font-size: 90px;
+}
+
+.contact-icon {
+  padding: 2%;
+  text-align: center;
+}
+
+.contact-icon:hover {
+  color: gray;
+}
+
+.icon-title {
+  text-align: center;
+}
+
+
+
+
